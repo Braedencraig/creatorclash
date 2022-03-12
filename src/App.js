@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 import { useEffect, useState } from "react";
 import Character from "./components/Character";
 import Spotlight from "./components/Spotlight";
@@ -164,6 +165,11 @@ function App() {
     [characterArray[6], characterArray[7]],
     [characterArray[8], characterArray[9]],
     [characterArray[10], characterArray[11]],
+    [characterArray[12], characterArray[13]],
+    [characterArray[14], characterArray[15]],
+    [characterArray[16], characterArray[17]],
+    [characterArray[18], characterArray[19]],
+    [characterArray[20], characterArray[21]],
   ];
 
   const [playerOne, setPlayerOne] = useState(characterArray[0]);
