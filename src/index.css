@@ -33,6 +33,18 @@ code {
     padding: 40px 20px;
 }
 
+.audio {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+}
+
+.audio button {
+    font-size: 30px;
+    background: transparent;
+    border: none;
+}
+
 .logo {
     max-width: 600px;
     width: 100%;
@@ -543,6 +555,11 @@ span {
     }
     .matchup {
         width: 95%;
+    }
+    .audio {
+        position: fixed;
+        top: 5px;
+        right: 5px;
     }
     /* .logo {
         max-width: 300px;
