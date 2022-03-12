@@ -16,7 +16,16 @@ import alex from "./assets/ididathing.png";
 import james from "./assets/odd1stout.jpg";
 import reeves from "./assets/michaelreeves.jpg";
 import stephan from "./assets/grahamstephan.jpg";
-
+import hanson from "./assets/arinhanson.jpeg";
+import harley from "./assets/harley.jpg";
+import minx from "./assets/justaminx.jpg";
+import anisa from "./assets/anisajohma.jpeg";
+import magee from "./assets/ryanmagee.jpg";
+import ernst from "./assets/alexernst.jpg";
+import barnatt from "./assets/nathanbarnatt.jpeg";
+import watson from "./assets/mattwatson.jpg";
+import chillz from "./assets/chillz.jpeg";
+import esfand from "./assets/esfand.jpg";
 import logo from "./assets/creator-clash-logo.png";
 import rgt from "./assets/rgt.png";
 
@@ -25,136 +34,158 @@ import "./App.css";
 function App() {
   const characterArray = [
     {
-      name: "Akuma",
-      id: "akuma",
-      imgSrc: "https://s3-us-west-2.amazonaws.com/s.cdpn.io/813538/akuma.png",
-      opponent: "balrog",
-    },
-    {
-      name: "Balrog",
-      id: "balrog",
-      imgSrc: "https://s3-us-west-2.amazonaws.com/s.cdpn.io/813538/balrog.png",
-      opponent: "akuma",
-    },
-    {
-      name: "M. Bison",
-      id: "bison",
-      imgSrc: "https://s3-us-west-2.amazonaws.com/s.cdpn.io/813538/bison.png",
-      opponent: "blanka",
-    },
-    {
-      name: "Blanka",
-      id: "blanka",
-      imgSrc: "https://s3-us-west-2.amazonaws.com/s.cdpn.io/813538/blanka.png",
-      opponent: "bison",
-    },
-    {
-      name: "Cammy",
-      id: "cammy",
-      imgSrc: "https://s3-us-west-2.amazonaws.com/s.cdpn.io/813538/cammy.png",
-      opponent: "chunli",
-    },
-    {
-      name: "Chun Li",
-      id: "chunli",
-      imgSrc: "https://s3-us-west-2.amazonaws.com/s.cdpn.io/813538/chunli.png",
-      opponent: "cammy",
-    },
-    {
-      name: "Dhalsim",
-      id: "dhalsim",
-      imgSrc: "https://s3-us-west-2.amazonaws.com/s.cdpn.io/813538/dhalsim.png",
-      opponent: "ehonda",
-    },
-    {
-      name: "E. Honda",
-      id: "ehonda",
-      imgSrc: "https://s3-us-west-2.amazonaws.com/s.cdpn.io/813538/ehonda.png",
-      opponent: "dhalsim",
-    },
-    {
-      name: "Evil Ryu",
-      id: "evilryu",
-      imgSrc: "https://s3-us-west-2.amazonaws.com/s.cdpn.io/813538/ryu.pnevilg.png",
-      opponent: "guile",
-    },
-    {
-      name: "Guile",
-      id: "guile",
-      imgSrc: "https://s3-us-west-2.amazonaws.com/s.cdpn.io/813538/guile.png",
-      opponent: "evilryu",
-    },
-    {
-      name: "Idubbbztv",
+      name: "Idubbbz tv",
       id: "idubbbztv",
       imgSrc: idubbbztv,
       opponent: "drmike",
+      youtube: "https://www.youtube.com/c/iDubbbzTV",
     },
     {
       name: "Dr. Mike",
       id: "drmike",
       imgSrc: drmike,
       opponent: "idubbbztv",
+      youtube: "https://www.youtube.com/c/DoctorMike",
+    },
+    {
+      name: "Harley",
+      id: "harley",
+      imgSrc: harley,
+      opponent: "hanson",
+      youtube: "http://google.com",
+    },
+    {
+      name: "Arin Hanson",
+      id: "hanson",
+      imgSrc: hanson,
+      opponent: "harley",
+      youtube: "https://www.youtube.com/user/GameGrumps",
     },
     {
       name: "Emmanuel Pacquiao Jr.",
       id: "epj",
       imgSrc: epj,
       opponent: "alexwassabi",
+      youtube: "https://www.youtube.com/c/JimuelPacquiao01",
     },
     {
       name: "Alex Wassabi",
       id: "alexwassabi",
       imgSrc: alexwassabi,
       opponent: "epj",
+      youtube: "https://www.youtube.com/c/Wassabi",
     },
     {
-      name: "Anything4views",
+      name: "Anything 4 views",
       id: "anything4views",
       imgSrc: anything4views,
       opponent: "erik",
+      youtube: "https://www.youtube.com/c/anything4views",
     },
     {
       name: "Erik",
       id: "erik",
       imgSrc: erik,
       opponent: "anything4views",
+      youtube: "https://www.youtube.com/c/ErikTheElectric",
     },
     {
       name: "Brett Hundar",
       id: "hundar",
       imgSrc: hundar,
       opponent: "ab",
+      youtube: "https://www.youtube.com/c/MuscleParty",
     },
     {
       name: "AB (H3H3)",
       id: "ab",
       imgSrc: ab,
       opponent: "hundar",
+      youtube: "https://www.youtube.com/c/ABalanceDramaNewsLive/videos",
+    },
+    {
+      name: "Anisa Jomha",
+      id: "anisa",
+      imgSrc: anisa,
+      opponent: "minx",
+      youtube: "https://www.youtube.com/c/AnisaJ",
+    },
+    {
+      name: "Justa Minx",
+      id: "minx",
+      imgSrc: minx,
+      opponent: "anisa",
+      youtube: "https://www.youtube.com/c/JustaMinx",
+    },
+    {
+      name: "Ryan Magee",
+      id: "magee",
+      imgSrc: magee,
+      opponent: "ernst",
+      youtube: "https://www.youtube.com/c/SuperMegaOfficial",
+    },
+    {
+      name: "Alex Ernst",
+      id: "ernst",
+      imgSrc: ernst,
+      opponent: "magee",
+      youtube: "https://www.youtube.com/user/TheAlexErnstShow",
+    },
+    {
+      name: "Matt Watson",
+      id: "watson",
+      imgSrc: watson,
+      opponent: "barnatt",
+      youtube: "https://www.youtube.com/c/MattMakesMovies",
+    },
+    {
+      name: "Nathan Barnatt",
+      id: "barnatt",
+      imgSrc: barnatt,
+      opponent: "watson",
+      youtube: "https://www.youtube.com/c/barnatt",
     },
     {
       name: "Alex (I Did A Thing)",
       id: "alex",
       imgSrc: alex,
       opponent: "james",
+      youtube: "https://www.youtube.com/c/Ididathing",
     },
     {
       name: "James (TheOdd1sOut)",
       id: "james",
       imgSrc: james,
       opponent: "alex",
+      youtube: "https://www.youtube.com/c/theodd1sout",
     },
     {
       name: "Michael Reeves",
       id: "reeves",
       imgSrc: reeves,
       opponent: "stephan",
+      youtube: "https://www.youtube.com/c/MichaelReeves",
     },
     {
       name: "Graham Stephan",
       id: "stephan",
       imgSrc: stephan,
       opponent: "reeves",
+      youtube: "https://www.youtube.com/c/GrahamStephan",
+    },
+    {
+      name: "Chillz",
+      id: "chillz",
+      imgSrc: chillz,
+      opponent: "esfand",
+      youtube: "https://www.youtube.com/c/Chills15",
+    },
+    {
+      name: "Esfand",
+      id: "esfand",
+      imgSrc: esfand,
+      opponent: "chillz",
+      youtube: "https://www.youtube.com/c/EsfandTV",
     },
   ];
 
