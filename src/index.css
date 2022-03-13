@@ -559,9 +559,10 @@ span {
     .audio {
         position: absolute;
         top: 2px;
-        right: 2px;
+        right: 7px;
     }
     .audio button {
         font-size: 22px;
+        padding-right: 0;
     }
 }
