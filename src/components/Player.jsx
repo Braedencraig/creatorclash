@@ -1,5 +1,6 @@
 /* eslint-disable react-hooks/exhaustive-deps */
 import React, { useState, useEffect } from "react";
+import music from "../assets/music.wav";
 
 const useAudio = (url) => {
   const [audio] = useState(new Audio(url));
@@ -12,11 +13,6 @@ const useAudio = (url) => {
   }, [playing]);
 
   useEffect(() => {
-    // audio.addEventListener("ended", () => setPlaying(false));
-    // return () => {
-    //   audio.removeEventListener("ended", () => setPlaying(false));
-    // };
-
     audio.addEventListener(
       "ended",
       function () {
@@ -31,7 +27,7 @@ const useAudio = (url) => {
 };
 
 const Player = ({ url }) => {
-  const [playing, toggle] = useAudio("https://assets.codepen.io/1158151/sf2cs_theme.aac");
+  const [playing, toggle] = useAudio(music);
 
   return (
     <div class="audio">
