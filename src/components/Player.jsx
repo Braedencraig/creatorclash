@@ -9,6 +9,7 @@ const useAudio = (url) => {
   const toggle = () => setPlaying(!playing);
 
   useEffect(() => {
+    console.log(audio.paused);
     playing ? audio.play() : audio.pause();
   }, [playing]);
 
@@ -30,8 +31,8 @@ const Player = ({ url }) => {
   const [playing, toggle] = useAudio(music);
 
   return (
-    <div class="audio">
-      <button onClick={toggle}>{playing ? "🔈" : "🔇"}</button>
+    <div className="audio">
+      <button onClickCapture={toggle}>{playing ? "🔈" : "🔇"}</button>
     </div>
   );
 };
