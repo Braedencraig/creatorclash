@@ -80,7 +80,7 @@ function App() {
       youtube: "https://www.youtube.com/c/Wassabi",
     },
     {
-      name: "Anything4Views",
+      name: "Anything 4 Views",
       id: "anything4views",
       imgSrc: anything4views,
       opponent: "erik",
