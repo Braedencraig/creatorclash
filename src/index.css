@@ -21,7 +21,7 @@ body {
     background-color: #f9484a;
     background-image: linear-gradient(315deg, #f9484a 0%, #fbd72b 74%);
     /* background-image: url("/src/assets/streetfighter.png"); */
-    display: none;
+    /* display: none; */
 }
 
 code {
@@ -54,6 +54,7 @@ code {
 
 .title {
     text-align: center;
+    margin-top: 50px;
     text-transform: uppercase;
     color: black;
     letter-spacing: 0.1em;
@@ -86,7 +87,7 @@ code {
     width: auto;
     max-height: 120px;
     align-self: stretch;
-    background: rgba(255, 255, 255, 0.5);
+    /* background: rgba(255, 255, 255, 0.5); */
     cursor: pointer;
     position: relative;
     text-align: center;
@@ -565,5 +566,8 @@ span {
     .audio button {
         font-size: 22px;
         padding-right: 0;
+    }
+    .title {
+        margin-top: 0px;
     }
 }

@@ -7,13 +7,14 @@ export default function Head2Head({ playerOne, playerTwo }) {
     <div className="matchup">
       <div className="matchup__player">
         <img className="" src={playerOne.imgSrc} alt={playerOne.name} />
-        {playerOne.id === "epj" ? (
+        <p>{playerOne.name.toUpperCase()}</p>
+        {/* {playerOne.id === "epj" ? (
           <p>
             EMMANUEL<span>PACQUIAO JR.</span>
           </p>
         ) : (
           <p>{playerOne.name.toUpperCase()}</p>
-        )}
+        )} */}
         {playerOne.youtube && (
           <a href={playerOne.youtube} target="_blank" rel="noopener noreferrer">
             <FontAwesomeIcon icon={faYoutube} />

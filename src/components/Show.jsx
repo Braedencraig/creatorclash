@@ -17,17 +17,13 @@ export default function Show() {
         </a>
       </div>
       <div className="socials">
-        <a href="http://" target="_blank" rel="noopener noreferrer">
+        <a href="https://www.instagram.com/thecreatorclash/?hl=en" target="_blank" rel="noopener noreferrer">
           {" "}
           <FontAwesomeIcon icon={faInstagram} />
         </a>
-        <a href="http://" target="_blank" rel="noopener noreferrer">
+        <a href="https://twitter.com/TheCreatorClash" target="_blank" rel="noopener noreferrer">
           {" "}
           <FontAwesomeIcon icon={faTwitter} />
-        </a>
-        <a href="http://" target="_blank" rel="noopener noreferrer">
-          {" "}
-          <FontAwesomeIcon icon={faYoutube} />
         </a>
       </div>
     </div>

@@ -7,7 +7,8 @@ import Show from "./components/Show";
 import Head2Head from "./components/Head2Head";
 import idubbbztv from "./assets/idubbbz.png";
 import drmike from "./assets/drmike.jpg";
-import epj from "./assets/epj.jpg";
+// import epj from "./assets/epj.jpg";
+import question from "./assets/question.png";
 import alexwassabi from "./assets/alexwasabi.jpg";
 import erik from "./assets/internetcommentetiquette.png";
 import anything4views from "./assets/anything4views.jpg";
@@ -20,12 +21,12 @@ import stephan from "./assets/grahamstephan.jpg";
 import hanson from "./assets/arinhanson.jpeg";
 import harley from "./assets/harley.jpg";
 import minx from "./assets/justaminx.jpg";
-import anisa from "./assets/anisajohma.jpeg";
+import haley from "./assets/yodelinghaley.png";
 import magee from "./assets/ryanmagee.jpg";
 import ernst from "./assets/alexernst.jpg";
 import barnatt from "./assets/nathanbarnatt.jpeg";
 import watson from "./assets/mattwatson.jpg";
-import chillz from "./assets/chillz.jpeg";
+// import chillz from "./assets/chillz.jpeg";
 import esfand from "./assets/esfand.jpg";
 import logo from "./assets/creator-clash-logo.png";
 import rgt from "./assets/rgt.png";
@@ -35,7 +36,7 @@ import "./App.css";
 function App() {
   const characterArray = [
     {
-      name: "Idubbbz tv",
+      name: "Idubbbz",
       id: "idubbbztv",
       imgSrc: idubbbztv,
       opponent: "drmike",
@@ -49,25 +50,27 @@ function App() {
       youtube: "https://www.youtube.com/c/DoctorMike",
     },
     {
-      name: "Harley",
+      name: "Harley (Epic Meal Time)",
       id: "harley",
       imgSrc: harley,
       opponent: "hanson",
-      youtube: "http://google.com",
+      youtube: "https://www.youtube.com/c/epicmealtime",
     },
     {
-      name: "Arin Hanson",
+      name: "Egoraptor",
       id: "hanson",
       imgSrc: hanson,
       opponent: "harley",
       youtube: "https://www.youtube.com/user/GameGrumps",
     },
     {
-      name: "Emmanuel Pacquiao Jr.",
+      // name: "Emmanuel Pacquiao Jr.",
+      name: "???",
       id: "epj",
-      imgSrc: epj,
+      imgSrc: question,
       opponent: "alexwassabi",
-      youtube: "https://www.youtube.com/c/JimuelPacquiao01",
+      youtube: "https://youtu.be/dQw4w9WgXcQ",
+      // youtube: "https://www.youtube.com/c/JimuelPacquiao01",
     },
     {
       name: "Alex Wassabi",
@@ -77,45 +80,45 @@ function App() {
       youtube: "https://www.youtube.com/c/Wassabi",
     },
     {
-      name: "Anything 4 views",
+      name: "Anything4Views",
       id: "anything4views",
       imgSrc: anything4views,
       opponent: "erik",
       youtube: "https://www.youtube.com/c/anything4views",
     },
     {
-      name: "Erik",
+      name: "Internet Comment Etiquette",
       id: "erik",
       imgSrc: erik,
       opponent: "anything4views",
       youtube: "https://www.youtube.com/c/ErikTheElectric",
     },
     {
-      name: "Brett Hundar",
+      name: "Hundar",
       id: "hundar",
       imgSrc: hundar,
       opponent: "ab",
       youtube: "https://www.youtube.com/c/MuscleParty",
     },
     {
-      name: "AB (H3H3)",
+      name: "AB (H3 Podcast)",
       id: "ab",
       imgSrc: ab,
       opponent: "hundar",
       youtube: "https://www.youtube.com/c/ABalanceDramaNewsLive/videos",
     },
     {
-      name: "Anisa Jomha",
-      id: "anisa",
-      imgSrc: anisa,
+      name: "Yodeling Haley",
+      id: "haley",
+      imgSrc: haley,
       opponent: "minx",
-      youtube: "https://www.youtube.com/c/AnisaJ",
+      youtube: "https://www.youtube.com/channel/UCsNOMACOZuOMd3snYwjlX9w",
     },
     {
-      name: "Justa Minx",
+      name: "Justaminx",
       id: "minx",
       imgSrc: minx,
-      opponent: "anisa",
+      opponent: "haley",
       youtube: "https://www.youtube.com/c/JustaMinx",
     },
     {
@@ -140,21 +143,21 @@ function App() {
       youtube: "https://www.youtube.com/c/MattMakesMovies",
     },
     {
-      name: "Nathan Barnatt",
+      name: "Dad",
       id: "barnatt",
       imgSrc: barnatt,
       opponent: "watson",
       youtube: "https://www.youtube.com/c/barnatt",
     },
     {
-      name: "Alex (I Did A Thing)",
+      name: "I did a thing",
       id: "alex",
       imgSrc: alex,
       opponent: "james",
       youtube: "https://www.youtube.com/c/Ididathing",
     },
     {
-      name: "James (TheOdd1sOut)",
+      name: "TheOdd1sOut",
       id: "james",
       imgSrc: james,
       opponent: "alex",
@@ -175,11 +178,12 @@ function App() {
       youtube: "https://www.youtube.com/c/GrahamStephan",
     },
     {
-      name: "Chillz",
+      // name: "Chillz",
+      name: "???",
       id: "chillz",
-      imgSrc: chillz,
+      imgSrc: question,
       opponent: "esfand",
-      youtube: "https://www.youtube.com/c/Chills15",
+      youtube: "https://youtu.be/dQw4w9WgXcQ",
     },
     {
       name: "Esfand",
