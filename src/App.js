@@ -273,6 +273,12 @@ function App() {
             return <Head2Head key={match[0].name} playerOne={match[0]} playerTwo={match[1]} />;
           })}
         </div>
+        <div className="inquiries">
+          <p>Sponsorship Inquiries:</p>
+          <a href="mailto:creatorclash@concurrentstudios.com">
+            creatorclash<span>@concurrentstudios.com</span>
+          </a>
+        </div>
         <a href="https://www.realgoodtouring.com/" target="_blank" rel="noopener noreferrer">
           <img className="rgt" src={rgt} alt="Real Good Touring" />
         </a>
