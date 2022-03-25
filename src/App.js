@@ -14,7 +14,7 @@ import alex from "./assets/ididathing.png";
 import james from "./assets/odd1stout.jpg";
 import reeves from "./assets/michaelreeves.jpg";
 import stephan from "./assets/grahamstephan.jpg";
-import hanson from "./assets/arinhanson.jpeg";
+import hanson from "./assets/arinhanson.jpg";
 import harley from "./assets/harley.jpg";
 import minx from "./assets/justaminx.jpg";
 import haley from "./assets/yodelinghaley.png";
