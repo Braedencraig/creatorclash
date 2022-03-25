@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
 import React from "react";
 import { faInstagram, faTwitter } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -7,13 +8,15 @@ export default function Show() {
     <div className="show">
       <h2>SATURDAY, MAY 14th</h2>
       <h2>TAMPA, FL</h2>
-      <h2>YEUNGLING CENTER</h2>
+      {/* <h2>YEUNGLING CENTER</h2> */}
       <div className="tickets">
-        <a className="ticket" href="http://google.com" target="_blank" rel="noopener noreferrer">
+        <a className="ticket" href="https://momenthouse.com/creatorclash" target="_blank" rel="noopener noreferrer">
           TICKETS TO STREAM
+          <span>Limited QTY Presale</span>
         </a>
-        <a className="ticket" href="http://google.com" target="_blank" rel="noopener noreferrer">
+        <a className="ticket">
           TICKETS TO EVENT
+          <span>On Sale April 8th</span>
         </a>
       </div>
       <div className="socials">

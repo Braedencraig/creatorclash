@@ -8,11 +8,11 @@ import Head2Head from "./components/Head2Head";
 import idubbbztv from "./assets/idubbbz.png";
 import drmike from "./assets/drmike.jpg";
 // import epj from "./assets/epj.jpg";
-import question from "./assets/question.png";
-import alexwassabi from "./assets/alexwasabi.jpg";
-import erik from "./assets/internetcommentetiquette.png";
-import anything4views from "./assets/anything4views.jpg";
-import hundar from "./assets/hundar.jpg";
+import question from "./assets/question2.png";
+// import alexwassabi from "./assets/alexwasabi.jpg";
+// import erik from "./assets/internetcommentetiquette.png";
+// import anything4views from "./assets/anything4views.jpg";
+import hundar from "./assets/hundar.jpeg";
 import ab from "./assets/ab.jpg";
 import alex from "./assets/ididathing.png";
 import james from "./assets/odd1stout.jpg";
@@ -21,13 +21,13 @@ import stephan from "./assets/grahamstephan.jpg";
 import hanson from "./assets/arinhanson.jpeg";
 import harley from "./assets/harley.jpg";
 import minx from "./assets/justaminx.jpg";
-import haley from "./assets/yodelinghaley.png";
+// import haley from "./assets/yodelinghaley.png";
 import magee from "./assets/ryanmagee.jpg";
 import ernst from "./assets/alexernst.jpg";
 import barnatt from "./assets/nathanbarnatt.jpeg";
 import watson from "./assets/mattwatson.jpg";
 // import chillz from "./assets/chillz.jpeg";
-import esfand from "./assets/esfand.jpg";
+// import esfand from "./assets/esfand.jpg";
 import logo from "./assets/creator-clash-logo.png";
 import rgt from "./assets/rgt.png";
 
@@ -73,25 +73,34 @@ function App() {
       // youtube: "https://www.youtube.com/c/JimuelPacquiao01",
     },
     {
-      name: "Alex Wassabi",
+      // name: "Alex Wassabi",
+      name: "???",
       id: "alexwassabi",
-      imgSrc: alexwassabi,
+      imgSrc: question,
+      // imgSrc: alexwassabi,
       opponent: "epj",
-      youtube: "https://www.youtube.com/c/Wassabi",
+      youtube: "https://youtu.be/dQw4w9WgXcQ",
+      // youtube: "https://www.youtube.com/c/Wassabi",
     },
     {
-      name: "Anything 4 Views",
+      // name: "Anything 4 Views",
+      name: "???",
       id: "anything4views",
-      imgSrc: anything4views,
+      // imgSrc: anything4views,
+      imgSrc: question,
       opponent: "erik",
-      youtube: "https://www.youtube.com/c/anything4views",
+      youtube: "https://youtu.be/dQw4w9WgXcQ",
+      // youtube: "https://www.youtube.com/c/anything4views",
     },
     {
-      name: "Internet Comment Etiquette",
+      // name: "Internet Comment Etiquette",
+      name: "???",
       id: "erik",
-      imgSrc: erik,
+      imgSrc: question,
+      // imgSrc: erik,
       opponent: "anything4views",
-      youtube: "https://www.youtube.com/c/ErikTheElectric",
+      youtube: "https://youtu.be/dQw4w9WgXcQ",
+      // youtube: "https://www.youtube.com/c/ErikTheElectric",
     },
     {
       name: "Hundar",
@@ -108,11 +117,14 @@ function App() {
       youtube: "https://www.youtube.com/c/ABalanceDramaNewsLive/videos",
     },
     {
-      name: "Yodeling Haley",
+      // name: "Yodeling Haley",
+      name: "???",
       id: "haley",
-      imgSrc: haley,
+      imgSrc: question,
+      // imgSrc: haley,
       opponent: "minx",
-      youtube: "https://www.youtube.com/channel/UCsNOMACOZuOMd3snYwjlX9w",
+      youtube: "https://youtu.be/dQw4w9WgXcQ",
+      // youtube: "https://www.youtube.com/channel/UCsNOMACOZuOMd3snYwjlX9w",
     },
     {
       name: "Justaminx",
@@ -186,11 +198,14 @@ function App() {
       youtube: "https://youtu.be/dQw4w9WgXcQ",
     },
     {
-      name: "Esfand",
+      // name: "Esfand",
+      name: "???",
       id: "esfand",
-      imgSrc: esfand,
+      imgSrc: question,
+      // imgSrc: esfand,
       opponent: "chillz",
-      youtube: "https://www.youtube.com/c/EsfandTV",
+      youtube: "https://youtu.be/dQw4w9WgXcQ",
+      // youtube: "https://www.youtube.com/c/EsfandTV",
     },
   ];
 
