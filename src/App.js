@@ -97,7 +97,7 @@ function App() {
       id: "ab",
       imgSrc: ab,
       opponent: "hundar",
-      youtube: "https://www.youtube.com/c/ABalanceDramaNewsLive/videos",
+      youtube: "https://www.youtube.com/channel/UCXZX9_3OUKCklwFAOEmVgkw",
     },
     {
       name: "Yodeling Haley",
