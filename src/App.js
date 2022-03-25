@@ -7,11 +7,7 @@ import Show from "./components/Show";
 import Head2Head from "./components/Head2Head";
 import idubbbztv from "./assets/idubbbz.png";
 import drmike from "./assets/drmike.jpg";
-// import epj from "./assets/epj.jpg";
 import question from "./assets/question2.png";
-// import alexwassabi from "./assets/alexwasabi.jpg";
-// import erik from "./assets/internetcommentetiquette.png";
-// import anything4views from "./assets/anything4views.jpg";
 import hundar from "./assets/hundar.jpeg";
 import ab from "./assets/ab.jpg";
 import alex from "./assets/ididathing.png";
@@ -26,8 +22,6 @@ import magee from "./assets/ryanmagee.jpg";
 import ernst from "./assets/alexernst.jpg";
 import barnatt from "./assets/dad.jpeg";
 import watson from "./assets/mattwatson.jpg";
-// import chillz from "./assets/chillz.jpeg";
-// import esfand from "./assets/esfand.jpg";
 import logo from "./assets/creator-clash-logo.png";
 import rgt from "./assets/rgt.png";
 
@@ -64,43 +58,32 @@ function App() {
       youtube: "https://www.youtube.com/user/GameGrumps",
     },
     {
-      // name: "Emmanuel Pacquiao Jr.",
       name: "???",
-      id: "epj",
+      id: "mannypacquiao",
       imgSrc: question,
-      opponent: "alexwassabi",
+      opponent: "evanderholyfield",
       youtube: "https://youtu.be/dQw4w9WgXcQ",
-      // youtube: "https://www.youtube.com/c/JimuelPacquiao01",
     },
     {
-      // name: "Alex Wassabi",
       name: "???",
-      id: "alexwassabi",
+      id: "evanderholyfield",
       imgSrc: question,
-      // imgSrc: alexwassabi,
-      opponent: "epj",
+      opponent: "mannypacquiao",
       youtube: "https://youtu.be/dQw4w9WgXcQ",
-      // youtube: "https://www.youtube.com/c/Wassabi",
     },
     {
-      // name: "Anything 4 Views",
       name: "???",
-      id: "anything4views",
-      // imgSrc: anything4views,
+      id: "floydmayweather",
       imgSrc: question,
-      opponent: "erik",
+      opponent: "miketyson",
       youtube: "https://youtu.be/dQw4w9WgXcQ",
-      // youtube: "https://www.youtube.com/c/anything4views",
     },
     {
-      // name: "Internet Comment Etiquette",
       name: "???",
-      id: "erik",
+      id: "miketyson",
       imgSrc: question,
-      // imgSrc: erik,
-      opponent: "anything4views",
+      opponent: "floydmayweather",
       youtube: "https://youtu.be/dQw4w9WgXcQ",
-      // youtube: "https://www.youtube.com/c/ErikTheElectric",
     },
     {
       name: "Hundar",
@@ -118,12 +101,9 @@ function App() {
     },
     {
       name: "Yodeling Haley",
-      // name: "???",
       id: "haley",
-      // imgSrc: question,
       imgSrc: haley,
       opponent: "minx",
-      // youtube: "https://youtu.be/dQw4w9WgXcQ",
       youtube: "https://www.youtube.com/channel/UCsNOMACOZuOMd3snYwjlX9w",
     },
     {
@@ -190,22 +170,18 @@ function App() {
       youtube: "https://www.youtube.com/c/GrahamStephan",
     },
     {
-      // name: "Chillz",
       name: "???",
-      id: "chillz",
+      id: "tysonfury",
       imgSrc: question,
-      opponent: "esfand",
+      opponent: "conormcgregor",
       youtube: "https://youtu.be/dQw4w9WgXcQ",
     },
     {
-      // name: "Esfand",
       name: "???",
-      id: "esfand",
+      id: "conormcgregor",
       imgSrc: question,
-      // imgSrc: esfand,
-      opponent: "chillz",
+      opponent: "tysonfury",
       youtube: "https://youtu.be/dQw4w9WgXcQ",
-      // youtube: "https://www.youtube.com/c/EsfandTV",
     },
   ];
 
