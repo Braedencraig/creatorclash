@@ -21,7 +21,7 @@ import stephan from "./assets/grahamstephan.jpg";
 import hanson from "./assets/arinhanson.jpeg";
 import harley from "./assets/harley.jpg";
 import minx from "./assets/justaminx.jpg";
-// import haley from "./assets/yodelinghaley.png";
+import haley from "./assets/yodelinghaley.png";
 import magee from "./assets/ryanmagee.jpg";
 import ernst from "./assets/alexernst.jpg";
 import barnatt from "./assets/nathanbarnatt.jpeg";
@@ -117,14 +117,14 @@ function App() {
       youtube: "https://www.youtube.com/c/ABalanceDramaNewsLive/videos",
     },
     {
-      // name: "Yodeling Haley",
-      name: "???",
+      name: "Yodeling Haley",
+      // name: "???",
       id: "haley",
-      imgSrc: question,
-      // imgSrc: haley,
+      // imgSrc: question,
+      imgSrc: haley,
       opponent: "minx",
-      youtube: "https://youtu.be/dQw4w9WgXcQ",
-      // youtube: "https://www.youtube.com/channel/UCsNOMACOZuOMd3snYwjlX9w",
+      // youtube: "https://youtu.be/dQw4w9WgXcQ",
+      youtube: "https://www.youtube.com/channel/UCsNOMACOZuOMd3snYwjlX9w",
     },
     {
       name: "Justaminx",
