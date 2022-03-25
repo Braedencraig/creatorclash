@@ -24,7 +24,7 @@ import minx from "./assets/justaminx.jpg";
 import haley from "./assets/yodelinghaley.png";
 import magee from "./assets/ryanmagee.jpg";
 import ernst from "./assets/alexernst.jpg";
-import barnatt from "./assets/nathanbarnatt.jpeg";
+import barnatt from "./assets/dad.jpeg";
 import watson from "./assets/mattwatson.jpg";
 // import chillz from "./assets/chillz.jpeg";
 // import esfand from "./assets/esfand.jpg";
@@ -159,7 +159,7 @@ function App() {
       id: "barnatt",
       imgSrc: barnatt,
       opponent: "watson",
-      youtube: "https://www.youtube.com/c/barnatt",
+      youtube: "https://www.youtube.com/c/DadFeels",
     },
     {
       name: "I did a thing",
