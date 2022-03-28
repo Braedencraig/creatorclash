@@ -1,6 +1,6 @@
 /* eslint-disable react-hooks/exhaustive-deps */
 import React, { useState, useEffect } from "react";
-import music from "../assets/music.wav";
+import music from "../assets/music.mp3";
 
 const useAudio = (url) => {
   const [audio] = useState(new Audio(url));
