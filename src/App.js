@@ -1,5 +1,6 @@
 /* eslint-disable react-hooks/exhaustive-deps */
 import { useEffect, useState } from "react";
+import ReactGA from "react-ga";
 import Character from "./components/Character";
 import Player from "./components/Player";
 import Spotlight from "./components/Spotlight";
@@ -203,6 +204,8 @@ function App() {
   const [playerTwo, setPlayerTwo] = useState(characterArray[1]);
 
   useEffect(() => {
+    const TRACKING_ID = "308654185"; // YOUR_OWN_TRACKING_ID
+    ReactGA.initialize(TRACKING_ID);
     const characterList = document.querySelectorAll(".character");
 
     characterList.forEach((character) => {
