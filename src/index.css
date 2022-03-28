@@ -393,6 +393,7 @@ h2 {
 
 .socials a svg {
     font-size: 70px;
+    width: 70px;
 }
 
 .rgt {
@@ -454,6 +455,7 @@ span {
 
 .matchup a svg {
     font-size: 40px;
+    width: 40px;
     color: black;
     margin-top: 20px;
 }
@@ -505,6 +507,7 @@ span {
     }
     .socials a svg {
         font-size: 40px;
+        width: 40px;
     }
     .ticket span {
         color: grey;
