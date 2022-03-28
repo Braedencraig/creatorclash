@@ -4,4 +4,4 @@
     X-Frame-Options = "SAMEORIGIN"
     X-XSS-Protection = "0"
     X-Content-Type-Options = "nosniff"
-    Content-Security-Policy = "default-src 'self' fonts.gstatic.com *.fonts.gstatic.com; frame-ancestors 'self'; form-action 'self'"
+    Content-Security-Policy = "default-src 'self' https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Press+Start+2P&display=swap; frame-ancestors 'self'; form-action 'self'"
