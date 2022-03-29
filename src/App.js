@@ -2,7 +2,6 @@
 import { useEffect, useState } from "react";
 // import ReactGA from "react-ga";
 import Character from "./components/Character";
-import Player from "./components/Player";
 import Spotlight from "./components/Spotlight";
 import Show from "./components/Show";
 import Head2Head from "./components/Head2Head";
@@ -223,7 +222,6 @@ function App() {
   return (
     <div className="App">
       <div className="container">
-        <Player />
         <img className="logo" src={logo} alt="Creator Clash Logo" />
         <div className="display-character">
           <div className="player player__one">
