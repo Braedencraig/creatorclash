@@ -1,7 +1,0 @@
-[[headers]]
-  for = "/*"
-  [headers.values]
-    X-Frame-Options = "SAMEORIGIN"
-    X-XSS-Protection = "0"
-    X-Content-Type-Options = "nosniff"
-    Content-Security-Policy = "default-src 'self' fonts.googleapis.com *.fonts.googleapis.com fonts.googleapis.com/* googletagmanager.com *.googletagmanager.com googletagmanager.com/* google-analytics.com *.google-analytics.com google-analytics.com/* fonts.gstatic.com *.fonts.gstatic.com fonts.gstatic.com/*; frame-ancestors 'self'; form-action 'self'"
