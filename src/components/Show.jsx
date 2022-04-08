@@ -12,7 +12,6 @@ export default function Show() {
       <div className="tickets">
         <a className="ticket" href="https://momenthouse.com/creatorclash" target="_blank" rel="noopener noreferrer">
           TICKETS TO STREAM
-          <span>Limited QTY Presale</span>
         </a>
         <a className="ticket">
           TICKETS TO EVENT
