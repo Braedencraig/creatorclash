@@ -1,36 +1,35 @@
 import React from "react";
-import { faYoutube } from "@fortawesome/free-brands-svg-icons";
+import { faYoutubeSquare } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 export default function Head2Head({ playerOne, playerTwo }) {
+  console.log(playerOne.name);
   return (
-    <div className="matchup">
-      <div className="matchup__player">
-        <img className="" src={playerOne.imgSrc} alt={playerOne.name} />
-        <p>{playerOne.name.toUpperCase()}</p>
-        {/* {playerOne.id === "epj" ? (
-          <p>
-            EMMANUEL<span>PACQUIAO JR.</span>
-          </p>
-        ) : (
+    <>
+      {playerOne.name === "Idubbbz" && <h3 className="event">MAIN EVENT</h3>}
+      {playerOne.name === "Harley (Epic Meal Time)" && <h3 className="event">CO-MAIN EVENT</h3>}
+      <h3>{playerOne.class}</h3>
+      <div className="matchup">
+        <div className="matchup__player">
+          <img className={`${playerOne.imgSrc.indexOf("question2") !== -1 && "question-img-spotlight head-img"}`} src={playerOne.imgSrc} alt={playerOne.name} />
           <p>{playerOne.name.toUpperCase()}</p>
-        )} */}
-        {playerOne.youtube && (
-          <a href={playerOne.youtube} target="_blank" rel="noopener noreferrer">
-            <FontAwesomeIcon icon={faYoutube} />
-          </a>
-        )}
+          {playerOne.youtube && (
+            <a href={playerOne.youtube} target="_blank" rel="noopener noreferrer">
+              <FontAwesomeIcon icon={faYoutubeSquare} />
+            </a>
+          )}
+        </div>
+        <h2 className="vs">VS</h2>
+        <div className="matchup__player">
+          <img className={`${playerTwo.imgSrc.indexOf("question2") !== -1 && "question-img-spotlight head-img"}`} src={playerTwo.imgSrc} alt={playerTwo.name} />
+          <p className="">{playerTwo.name.toUpperCase()}</p>
+          {playerTwo.youtube && (
+            <a href={playerTwo.youtube} target="_blank" rel="noopener noreferrer">
+              <FontAwesomeIcon icon={faYoutubeSquare} />
+            </a>
+          )}
+        </div>
       </div>
-      <h2 className="vs">VS</h2>
-      <div className="matchup__player">
-        <img className="" src={playerTwo.imgSrc} alt={playerTwo.name} />
-        <p className="">{playerTwo.name.toUpperCase()}</p>
-        {playerTwo.youtube && (
-          <a href={playerTwo.youtube} target="_blank" rel="noopener noreferrer">
-            <FontAwesomeIcon icon={faYoutube} />
-          </a>
-        )}
-      </div>
-    </div>
+    </>
   );
 }
