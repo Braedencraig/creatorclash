@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import { useForm } from "react-hook-form";
 import logo from "../assets/creator-clash-logo.png";
 import { Link } from "react-router-dom";
@@ -9,7 +9,7 @@ export default function SignUp() {
   const {
     register,
     handleSubmit,
-    watch,
+    // watch,
     formState: { errors },
   } = useForm();
 
