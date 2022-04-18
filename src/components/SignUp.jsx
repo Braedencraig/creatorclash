@@ -13,7 +13,8 @@ export default function SignUp() {
     formState: { errors },
   } = useForm();
 
-  const scriptUrl = "https://script.google.com/macros/s/AKfycbwuUQ0Bjzq3ND73D7lhYLbD0L07iROSqK50bZFqDE6SvKpTnr0f2P5sX_PVlXB5h_EjjQ/exec";
+  const scriptUrl =
+    "https://script.google.com/macros/s/AKfycbwuUQ0Bjzq3ND73D7lhYLbD0L07iROSqK50bZFqDE6SvKpTnr0f2P5sX_PVlXB5h_EjjQ/exec";
   // const form = document.forms["google-sheet"];
 
   const onSubmit = (data) => {
@@ -26,7 +27,9 @@ export default function SignUp() {
   };
 
   function handleCheck(box) {
-    const allCheckboxes = Array.from(document.querySelectorAll('input[type="radio"]'));
+    const allCheckboxes = Array.from(
+      document.querySelectorAll('input[type="radio"]')
+    );
     allCheckboxes.forEach((checkbox) => {
       if (checkbox.value !== box.value) {
         checkbox.checked = false;
@@ -36,7 +39,11 @@ export default function SignUp() {
 
   return (
     <div className="App">
-      <img className="logo container sign-up" src={logo} alt="Creator Clash Logo" />
+      <img
+        className="logo container sign-up"
+        src={logo}
+        alt="Creator Clash Logo"
+      />
       {success ? (
         <div>
           <h2 className="form-font">Thank you for your submission</h2>
@@ -50,30 +57,109 @@ export default function SignUp() {
         <div>
           <h2 className="form-font">PLEASE FILL OUT THE FORM</h2>
           <form onSubmit={handleSubmit(onSubmit)} name="google-sheet">
-            {/* <label htmlFor="name">Name</label> */}
-            <input placeholder="NAME" {...register("name", { required: true, maxLength: 100 })} />
+            <input
+              placeholder="NAME"
+              {...register("name", { required: true, maxLength: 100 })}
+            />
             {errors.name && <span className="error">Name is required</span>}
-            {/* <label htmlFor="company">Company</label> */}
-            <input placeholder="COMPANY" {...register("company", { required: true, maxLength: 100 })} />
-            {errors.company && <span className="error">Company is required</span>}
-            {/* <label htmlFor="email">Email</label> */}
-            <input placeholder="EMAIL" {...register("email", { required: true, pattern: /^\S+@\S+\.\S+$/ })} />
-            {errors.email && <span className="error">A valid email is required</span>}
-            {/* <label htmlFor="phone">Phone</label> */}
-            <input placeholder="PHONE" {...register("phone", { required: true, pattern: /^\s*(?:\+?(\d{1,3}))?[-. (]*(\d{3})[-. )]*(\d{3})[-. ]*(\d{4})(?: *x(\d+))?\s*$/ })} />
-            {errors.phone && <span className="error">A valid phone number is required</span>}
-            {/* <p className="font">Link To Recent Publications</p> */}
-            <textarea placeholder="LINK TO RECENT PUBLICATIONS" {...register("recent", { required: true, maxLength: 1000 })} />
-            {errors.recent && <span className="error">Links to recent publications are required.</span>}
-            <p className="font">Requesting PPV or Media Pass</p>
+            <input
+              placeholder="TITLE"
+              {...register("title", { required: true, maxLength: 100 })}
+            />
+            {errors.title && <span className="error">Title is required</span>}
+            <input
+              placeholder="PUBLICATION"
+              {...register("publication", { required: true, maxLength: 100 })}
+            />
+            {errors.publication && (
+              <span className="error">Publication is required</span>
+            )}
+            <input
+              placeholder="EMAIL"
+              {...register("email", {
+                required: true,
+                pattern: /^\S+@\S+\.\S+$/,
+              })}
+            />
+            {errors.email && (
+              <span className="error">A valid email is required</span>
+            )}
+            <p className="font">
+              Three links to recent articles/coverage/news contributed by you
+            </p>
+            <input
+              placeholder="LINK 1"
+              {...register("recent1", { required: true, maxLength: 200 })}
+            />
+            <input
+              placeholder="LINK 2"
+              {...register("recent2", { required: true, maxLength: 200 })}
+            />
+            <input
+              placeholder="LINK 3"
+              {...register("recent3", { required: true, maxLength: 200 })}
+            />
+            <p className="font">Requesting Media Pass Type</p>
             <div className="chex">
-              <div className="box">
+              {/* <div className="box">
                 <label htmlFor="pass">PPV</label>
-                <input onClick={(e) => handleCheck(e.target)} type="radio" name="ppv" value="ppv" {...register("ppv")} />
+                <input
+                  onClick={(e) => handleCheck(e.target)}
+                  type="radio"
+                  name="ppv"
+                  value="ppv"
+                  {...register("ppv")}
+                />
+              </div> */}
+              <div className="box">
+                <label htmlFor="pass">
+                  In-Person Weigh In/Press Conference (May 13)
+                </label>
+                <input
+                  className="target"
+                  onClick={(e) => handleCheck(e.target)}
+                  type="radio"
+                  name="media-pass1"
+                  value="media-pass1"
+                  {...register("media-pass1")}
+                />
               </div>
               <div className="box">
-                <label htmlFor="pass">Media Pass</label>
-                <input className="target" onClick={(e) => handleCheck(e.target)} type="radio" name="media-pass" value="media-pass" {...register("media-pass")} />
+                <label htmlFor="pass">Event (May 14)</label>
+                <input
+                  className="target"
+                  onClick={(e) => handleCheck(e.target)}
+                  type="radio"
+                  name="media-pass2"
+                  value="media-pass2"
+                  {...register("media-pass2")}
+                />
+              </div>
+              <div className="box">
+                <label htmlFor="pass">
+                  Both In-Person Weigh In/Press Conference & Main Event
+                </label>
+                <input
+                  className="target"
+                  onClick={(e) => handleCheck(e.target)}
+                  type="radio"
+                  name="media-pass3"
+                  value="media-pass3"
+                  {...register("media-pass3")}
+                />
+              </div>
+              <div className="box">
+                <label htmlFor="pass">
+                  Moment House Livestream (Digital Only)
+                </label>
+                <input
+                  className="target"
+                  onClick={(e) => handleCheck(e.target)}
+                  type="radio"
+                  name="media-pass4"
+                  value="media-pass4"
+                  {...register("media-pass4")}
+                />
               </div>
             </div>
             <input className="submit ticket" type="submit" />

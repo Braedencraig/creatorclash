@@ -633,27 +633,31 @@ textarea {
 
 .chex {
     display: flex;
+    flex-wrap: wrap;
     margin-top: 20px;
     margin-bottom: 30px;
 }
 
 .box {
-    margin-right: 240px;
+    margin-right: 60px;
     display: flex;
     align-items: center;
     margin-bottom: 60px;
     color: white;
+    flex-direction: row-reverse;
 }
 
 .box label {
     margin-bottom: 0;
     color: white;
-    margin-right: 15px;
+    margin-left: 15px;
+    text-align: left;
 }
 
 .font {
     color: white;
     text-align: left;
+    margin-bottom: 40px;
 }
 
 input[type="checkbox"],
@@ -821,6 +825,9 @@ select:focus-within {
     .matchup p {
         width: 250px;
     }
+    .box {
+        margin-right: 0;
+    }
 }
 
 @media only screen and (max-width: 787px) {
@@ -828,6 +835,9 @@ select:focus-within {
         max-width: 300px;
         margin-top: 10px;
         margin-bottom: 50px;
+    }
+    .box {
+        justify-content: flex-end;
     }
     .title {
         font-size: 20px;
