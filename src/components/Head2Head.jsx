@@ -3,7 +3,6 @@ import { faYoutubeSquare } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 export default function Head2Head({ playerOne, playerTwo }) {
-  console.log(playerOne.name);
   return (
     <>
       {playerOne.name === "Idubbbz" && <h3 className="event">MAIN EVENT</h3>}
