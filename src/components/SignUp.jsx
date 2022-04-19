@@ -13,11 +13,12 @@ export default function SignUp() {
     formState: { errors },
   } = useForm();
   // const form = document.forms["google-sheet"];
+  const script = process.env.REACT_APP_NOT_SECRET_CODE;
 
   const onSubmit = (data) => {
     if (data) {
       const form = document.forms["google-sheet"];
-      fetch(process.env.REACT_APP_NOT_SECRET_CODE, { method: "POST", body: new FormData(form) })
+      fetch(script, { method: "POST", body: new FormData(form) })
         .then((response) => setSuccess(true))
         .catch((error) => console.error("Error!", error.message));
     }
