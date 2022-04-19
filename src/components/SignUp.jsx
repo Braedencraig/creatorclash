@@ -12,13 +12,13 @@ export default function SignUp() {
     // watch,
     formState: { errors },
   } = useForm();
+  const scriptUrl = "https://script.google.com/macros/s/AKfycbwuUQ0Bjzq3ND73D7lhYLbD0L07iROSqK50bZFqDE6SvKpTnr0f2P5sX_PVlXB5h_EjjQ/exec";
   // const form = document.forms["google-sheet"];
-  const script = process.env.REACT_APP_NOT_SECRET_CODE;
 
   const onSubmit = (data) => {
     if (data) {
       const form = document.forms["google-sheet"];
-      fetch(script, { method: "POST", body: new FormData(form) })
+      fetch(scriptUrl, { method: "POST", body: new FormData(form) })
         .then((response) => setSuccess(true))
         .catch((error) => console.error("Error!", error.message));
     }
