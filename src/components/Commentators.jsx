@@ -53,7 +53,7 @@ export default function Commentators() {
         {commentatorsArray.map((commentator, i) => {
           return (
             <a target="_blank" rel="noopener noreferrer" key={i} href={commentator.link} className="player character__spotlight commenter">
-              <img className="character__img" src={commentator.imgSrc} alt={commentator.name} />
+              <img loading="lazy" className="character__img" src={commentator.imgSrc} alt={commentator.name} />
               <p className="spotlight__text">{commentator.name}</p>
             </a>
           );

@@ -251,7 +251,7 @@ function Home() {
           </a>
         </div>
         <a className="container" href="https://www.realgoodtouring.com/" target="_blank" rel="noopener noreferrer">
-          <img className="rgt" src={rgt} alt="Real Good Touring" />
+          <img loading="lazy" className="rgt" src={rgt} alt="Real Good Touring" />
         </a>
       </div>
     </div>
