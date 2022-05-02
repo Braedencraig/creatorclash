@@ -81,19 +81,19 @@ export default function SignUp() {
               </div> */}
               <div className="box">
                 <label htmlFor="pass">In-Person Weigh In/Press Conference (May 13)</label>
-                <input className="target" onClick={(e) => handleCheck(e.target)} type="radio" name="media-pass1" value="media-pass1" {...register("media-pass1")} />
+                <input className="target" onClick={(e) => handleCheck(e.target)} type="radio" name="wi-pc" value="wi-pc" {...register("wi-pc")} />
               </div>
               <div className="box">
                 <label htmlFor="pass">Event (May 14)</label>
-                <input className="target" onClick={(e) => handleCheck(e.target)} type="radio" name="media-pass2" value="media-pass2" {...register("media-pass2")} />
+                <input className="target" onClick={(e) => handleCheck(e.target)} type="radio" name="main" value="main" {...register("main")} />
               </div>
               <div className="box">
                 <label htmlFor="pass">Both In-Person Weigh In/Press Conference & Main Event</label>
-                <input className="target" onClick={(e) => handleCheck(e.target)} type="radio" name="media-pass3" value="media-pass3" {...register("media-pass3")} />
+                <input className="target" onClick={(e) => handleCheck(e.target)} type="radio" name="wi-pc-main" value="wi-pc-main" {...register("wi-pc-main")} />
               </div>
               <div className="box">
                 <label htmlFor="pass">Moment House Livestream (Digital Only)</label>
-                <input className="target" onClick={(e) => handleCheck(e.target)} type="radio" name="media-pass4" value="media-pass4" {...register("media-pass4")} />
+                <input className="target" onClick={(e) => handleCheck(e.target)} type="radio" name="livestream" value="livestream" {...register("livestream")} />
               </div>
             </div>
             <input className="submit ticket" type="submit" />
