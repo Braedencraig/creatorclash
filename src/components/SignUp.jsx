@@ -12,7 +12,8 @@ export default function SignUp() {
     // watch,
     formState: { errors },
   } = useForm();
-  const scriptUrl = "https://script.google.com/macros/s/AKfycbwuUQ0Bjzq3ND73D7lhYLbD0L07iROSqK50bZFqDE6SvKpTnr0f2P5sX_PVlXB5h_EjjQ/exec";
+  const scriptUrl = "https://script.google.com/macros/s/AKfycbzjxX1fPobiH5DtA-VUJWQuqP0KirpfF9o7XFA6pDpORDGbh8WhYLRwuWUFEcJMTsrE5A/exec";
+  // const scriptUrl = "https://script.google.com/macros/s/AKfycbwuUQ0Bjzq3ND73D7lhYLbD0L07iROSqK50bZFqDE6SvKpTnr0f2P5sX_PVlXB5h_EjjQ/exec";
   // const form = document.forms["google-sheet"];
 
   const onSubmit = (data) => {
